@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+}
+header .icons {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+header .icons .bord {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  border-left: 1px solid rgb(221, 221, 221);
+  padding: 0px 20px;
+}
+header .icons .bord input {
+  border: 0;
+  outline: 0;
+}
+header .icons .bord i {
+  margin: 10px;
+}
+
+.block {
+  width: 100%;
+  height: 80px;
+}
+
+main #welcome {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/assets/img/bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #welcome .welcomeText h6 {
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 10px;
+}
+main #welcome .welcomeText h2 {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+main #welcome .welcomeText button {
+  min-width: 170px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #0315ff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+main #welcome .welcomeText button:hover {
+  background-color: #DC0345;
+}
+main #category {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #category .clothing {
+  width: 100%;
+  height: 240px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.468), rgba(255, 255, 255, 0.468)), url(/assets/img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+main #category .clothing h5 {
+  color: #000000;
+  font-weight: 750;
+  font-size: 30px;
+}
+main #category .clothing h5:hover {
+  color: #0315ff;
+}
+main #category .shoes {
+  background-image: url(/assets/img/bg-2.jpg);
+  width: 100%;
+  height: 240px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.468), rgba(255, 255, 255, 0.468)), url(/assets/img/bg-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+main #category .shoes h5 {
+  color: #000000;
+  font-weight: 750;
+  font-size: 30px;
+}
+main #category .shoes h5:hover {
+  color: #0315ff;
+}
+main #category .accesories {
+  background-image: url(/assets/img/bg-2.jpg);
+  width: 100%;
+  height: 240px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.468), rgba(255, 255, 255, 0.468)), url(/assets/img/bg-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+main #category .accesories h5 {
+  color: #000000;
+  font-weight: 750;
+  font-size: 30px;
+}
+main #category .accesories h5:hover {
+  color: #0315ff;
+}
+main #sale {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #sale .saleBox {
+  width: 100%;
+  height: 60vh;
+  background-image: url(/assets/img/bg-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+}
+main #sale .saleBox .saleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  width: 50%;
+  height: 100%;
+}
+main #sale .saleBox .saleText h6 {
+  font-size: 24px;
+  color: #dc0345;
+  margin-bottom: 10px;
+}
+main #sale .saleBox .saleText h2 {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+main #sale .saleBox .saleText button {
+  min-width: 170px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #0315ff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+main #products {
+  width: 100%;
+  height: auto;
+}
+main #products #container {
+  width: 100%;
+  height: 600px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 20px;
+}
+main #products #container .card {
+  justify-content: space-between;
+  min-width: 200px;
+}
+main #products #container .card .title {
+  padding: 10px;
+}
+main #products #container .card .title p {
+  color: red;
+}
+main #products #container .card img {
+  width: 100%;
+  height: 200px;
+}
+main #products #container .card button {
+  min-width: 170px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #0315ff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+main #products #container .card button:hover {
+  background-color: #DC0345;
+}
+main #products .loadArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main #products .loadArea button {
+  min-width: 130px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #ff6803;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+main #products .loadArea button:hover {
+  background-color: #ca3e0b;
+}
+main #brands {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #brands .brandsBox .brandLogo {
+  padding: 10px;
+}
+main #brands .brandsBox .brandLogo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+footer {
+  width: 100;
+  height: 60px;
+  background: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer span {
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  main #welcome {
+    height: 350px;
+  }
+  main #welcome .welcomeText h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fixit {
+    flex-direction: column !important;
+  }
+  nav {
+    width: 100%;
+  }
+  .saleText {
+    width: 60% !important;
+  }
+  .saleText h2 {
+    font-size: 30px !important;
+  }
+  #welcome {
+    margin-bottom: 25px;
+  }
+  .loadArea {
+    justify-content: center !important;
+  }
+  .icons {
+    border-top: 1px solid rgb(221, 221, 221);
+    height: 30px !important;
+  }
+  .icons .bord {
+    border: 0 !important;
+    padding: 10px !important;
+  }
+  .icons .bord i {
+    margin: 0px !important;
+    padding: 0 !important;
+  }
+  .icons .bord input {
+    max-width: 120px !important;
+  }
+}
+#basket {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#basket #bskcontainer {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#basket #bskcontainer .myCard {
+  justify-content: space-between;
+  min-width: 200px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#basket #bskcontainer .myCard .title {
+  padding: 10px;
+}
+#basket #bskcontainer .myCard .title p {
+  color: red;
+}
+#basket #bskcontainer .myCard img {
+  width: 100%;
+  height: 200px;
+}
+#basket #bskcontainer .myCard button {
+  min-width: 170px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #0315ff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+#basket #bskcontainer .myCard button:hover {
+  background-color: #DC0345;
+}
